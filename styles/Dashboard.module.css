@@ -1,0 +1,165 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: var(--font-family);
+  }
+  
+  .hero {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 730px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-content: center; /* Centers the entire grid within the container */
+    text-align: center; /* Centers text inside each card */
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    color: var(--primary-color);
+  }
+  
+  .score {
+    text-align: center;
+    margin-bottom: 2rem;
+
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    max-width: 800px;
+  }
+  
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navLink:hover {
+    text-decoration: underline;
+  }
+  .nav button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .nav button:hover {
+    background-color: #333;
+  }
+
+
+.modeDropdown {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: var(--primary-color);
+    min-width: 120px;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    top: 100%;
+    left: 0;
+  }
+  
+  .modeDropdown:hover .dropdownContent {
+    display: block;
+  }
+  
+  .dropdownContent button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    padding: 0.5rem;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .dropdownContent button:hover {
+    background-color: #f0f0f0;
+  }
+  .cta {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .cta h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta p {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .ctaButton {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .ctaButton:hover {
+    background-color: #c0392b; /* Slightly darker for hover effect */
+  }
